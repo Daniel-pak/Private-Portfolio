@@ -1,10 +1,6 @@
 .page {
-    bottom: 0;
-    position: absolute;
     text-align: center;
-    top: 100px;
-    width: 100%;
-    z-index: 0;
+    padding-bottom: 10%;
 }
 
 .v_school {
@@ -148,15 +144,6 @@ body {
     background-size: cover;
 }
 
-.foobar {
-    padding-top: 15px;
-    padding-bottom: 20px;
-    background-color: white;
-    opacity: .8;
-    height: 100px;
-    z-index: 1;
-}
-
 .navigation_buttons {
     display: inline-block;
     height: 50px;
@@ -167,13 +154,6 @@ body {
     border: 1px white solid;
     color: grey;
 }
-
-/*
-.navigation_buttons:hover {
-    border: 1px red solid;
-    padding-top: 15px;
-}
-*/
 
 * {
     font-family: 'Arvo', serif;
@@ -323,11 +303,19 @@ div.home a {
     .small_screen { 
         margin-bottom: 100px;
     }
+    
+    .aboutme { 
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
 }
 
 @media (max-width: 685px) {
     .contact_menu {
         width: 100%;
+    }
+    .page { 
+        margin-bottom: 75px; 
     }
 }
 
@@ -337,7 +325,7 @@ div.home a {
     }
     .page {
         margin-top: 30px;
-        padding-bottom: 30px;
+        margin-bottom: 50px;
     }
     .navigation_buttons { 
         height: 30px;
@@ -347,9 +335,6 @@ div.home a {
     }
 }   
 
-.about_container { 
-    margin-top: 5%;
-}
 
 .wrap-text { 
     padding: 10px;

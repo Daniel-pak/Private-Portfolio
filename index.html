@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Daniel Pak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,26 +13,40 @@
 </head>
 
 <body>
-    <nav class='container-fluid text-center foobar'>
-        <a class="contact_links" href="#/home">
-            <div class="navigation_buttons">Home</div>
-        </a>
-        <a class="contact_links" href="#/skills">
-            <div class="navigation_buttons">Skills</div>
-        </a>
-        <a class="contact_links" href="#/portfolio">
-            <div class="navigation_buttons">Portfolio</div>
-        </a>
-        <a class="contact_links" href="#/about">
-            <div class="navigation_buttons">About</div>
-        </a>
+    <nav class='navbar navbar-default text-center'>
+        <div class=" container-fluid ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_items" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar_items">
+                <ul class="dropdown nav navbar-nav">
+                    <li>
+                        <a href="#/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#/skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#/portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#/about">About</a>
+                    </li>   
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <ng-view class="page {{pageClass}}"></ng-view>
 
 
     <email-me></email-me>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
