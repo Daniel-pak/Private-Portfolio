@@ -372,3 +372,8 @@ div.home a {
 .container { 
     margin-bottom: 5%;
 }
+
+.margins { 
+    margin-left: 3%; 
+    margin-right: 3%;
+}
